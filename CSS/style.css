@@ -1,0 +1,100 @@
+/* Fornmato base proyecto */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.item-description,
+.item-owner,
+.item-duedate {
+  padding: 5px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.item-completed:checked + .item-description {
+  background: #dddddd;
+  text-decoration: line-through;
+}
+
+#add {
+  padding: 8px 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #009578;
+  cursor: pointer;
+}
+
+.header{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+.items{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  height: 100px;
+  background: #4d4d5c;
+  padding: 0 50px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #6cc091;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0px 10px;
+  transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.mostrar-menu {
+  order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: #6cc091;
+}
+
+#check {
+  display: none;
+}
+
+/* ToDO list Headers */
+
+.todoheader {
+  color: #009578;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
